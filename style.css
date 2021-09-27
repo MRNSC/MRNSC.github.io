@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(Nuotraukos/grass.jpg);  
+    background-size: cover;
+    font-size: 25px; 
+    font-weight: bold;
+    }
+   
+    
+    @-webkit-keyframes blackWhite {  
+      0% { background-color: rgb(243, 88, 88); }
+      50% { background-color: rgb(233, 229, 23); }
+      75% { background-color: rgb(160, 37, 37); }
+      100% { background-color: rgb(241, 16, 8); }
+    }
+    
+    .antraste {
+        height: 100px;
+        padding: 10px;       
+        background-color: rgb(172, 38, 38);
+        -webkit-animation-name: blackWhite;  
+        -webkit-animation-iteration-count: infinite;  
+        -webkit-animation-duration: 5s; 
+    }
+
+
+.juosta {
+    padding: 20px;
+   }
+.isskleidimas {
+    background-color: #991a93;
+    color: white;
+    font-size: 32px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .juosta {
+    position: relative;
+    display: inline-block;
+  }
+ 
+  .pirmas {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .pirmas a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .pirmas a:hover {background-color: #f1f1f1}
+  
+  .juosta:hover .pirmas {
+    display: block;
+  }
+  
+  .juosta:hover .isskleidimas {
+    background-color: #3e8e41;
+  }
+  
+  .antras{
+    background-color: #4c74af;
+    color: white;
+    font-size: 32px;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 10px;
+  }
+  .antras:hover {
+    background-color:rgb(224, 31, 31) ;
+  }
+  .trecias{
+    background-color: #4c74af;
+    color: white;
+    font-size: 32px;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 10px;
+  }
+  .trecias:hover {
+    background-color:rgb(224, 31, 31) ;
+  }
+  .ketvirtas{
+    background-color: #4c74af;
+    color: white;
+    font-size: 32px;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 10px;
+  }
+  .ketvirtas:hover {
+    background-color:rgb(224, 31, 31) ;
+  }
+  .penktas{
+    background-color: #4c74af;
+    color: white;
+    font-size: 32px;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px; 
+    padding: 10px;
+    }
+    .penktas:hover {
+      background-color:rgb(224, 31, 31) ;
+    }
+
+  .centras{
+    text-align: center;
+    margin: 20px;
+  }
+
+  .stulpelis {
+    float: left;
+    padding: 10px;
+    height:auto; /* Should be removed. Only for demonstration */
+  }
+  
+  .Kaireje, .Desineje {
+    width: 20%;
+    padding-left: 40px;
+     }
+  
+   .Centre {
+    width: 60%;
+  }
+
+  
+  /* Clear floats after the columns */
+  .pagrindas:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .Desineje{
+    animation: blinker 1s linear infinite;
+    color: rgb(77, 1, 1);
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-align: center;
+    padding-left: 50px;
+    }
+  @keyframes blinker {
+    50% {opacity: 0;}
+  } 
+  .Desineje:hover{
+    width: 200px;
+    height: 200px;
+    writing-mode: horizontal-tb;
+  }
+
+  #panel, .flip {
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+ 
+  }
+  
+  #panel {
+    display: none;
+  }
+  
