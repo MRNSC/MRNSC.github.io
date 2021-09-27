@@ -1,5 +1,5 @@
 function grizkITrecia (){
-    window.location.href="Istorija.html"
+    window.location.href="istorija.html"
 }
 function grizkIKetvirta (){
     window.location.href="kontaktai.html"
